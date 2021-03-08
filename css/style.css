@@ -3,7 +3,6 @@
 /* Blue: #002f5e */
 /* Crimson: #a91639 */
 /* Purple: #662d91 */
-/*referenced from A3 sample solution*/
 /*****************************************************************************/
 body {
     color: #000;
@@ -92,6 +91,7 @@ header {
 }
 
 
+
 /*****************************************************************************/
 /*  General */
 /*****************************************************************************/
@@ -163,35 +163,33 @@ header nav a {
 header .social {
     padding: 8px 32px;
 }
-#hero-container.bee {
-    background-image: url("../img/bee-collecting-pollen.jpg");        
+
+li div{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-color: #002f5e;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom:8px;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+input[type="submit"],label{
+    z-index:2;
+    width:40px;
+    overflow:hidden;
+    
+}
+input[type="text"]{
+    z-index:7;
+    width:180px;
+    overflow:hidden;
+    background-color:#002f5e;
+}
+form{
+    background:none;
 }
 
-#hero-container.tractor {
-    background-image: url("../img/field-and-tractors.jpg");        
-}
-#hero-container.meadow {
-    background-image: url("../img/meadow.jpg");        
-}
-#site-title, header nav, header .social {
-    position: relative;
-    z-index: 2;
-}
-    
-#logo {
-    z-index: 3;    
- }    
-    
-#overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    opacity:0;
-}
 /*****************************************************************************/
 /*  Content */
 /*****************************************************************************/
@@ -203,12 +201,16 @@ blockquote {
     margin-left: 16px;
     margin-right: 16px;
 }
+
+
+/*****************************************************************************/
+/*  Thumbnail Gallery */
+/*****************************************************************************/
 .thumbnail-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
-    
 }
 
 .thumbnail-gallery figure {
