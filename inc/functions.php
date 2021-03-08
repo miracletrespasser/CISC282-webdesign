@@ -8,7 +8,7 @@ function print_head($page_title, $include_MP_validation=false) { ?>
 <head>
 	<title>CISC 282 |<?= $page_title?></title>
 	<meta charset="utf-8"/>
-	<meta name="author" content="Sarah-Jane Whittaker"/>
+	<meta name="author" content="James(Donghao) Wang"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="css/icons.css"> 	
 	<link rel="stylesheet" href="css/style.css"> 	
